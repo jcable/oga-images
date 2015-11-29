@@ -22,6 +22,10 @@ width:660px;
 
 }
 
+#rotating_canvas {
+height:300px;
+}
+
 #rightcol {
 float: left;
 width: 300px;
