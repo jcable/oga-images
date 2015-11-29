@@ -11,7 +11,7 @@
     echo "Upload: " . $_FILES["file"]["name"] . "<br />";
     echo "Type: " . $_FILES["file"]["type"] . "<br />";
     echo "Size: " . number_format($_FILES["file"]["size"] / 1024, 2) . " Kb<br />";
-    foreach($_REQUEST as $k -> $v) {
+    foreach($_POST as $k => $v) {
 	    echo "$k: $v<br/>";
     }
    
