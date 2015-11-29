@@ -208,7 +208,9 @@ $(function() {
 		xhr.open('POST', "upload.php", true);
 		var formdata = new FormData();
 		formdata.append("file", blob, filename);
-		formdata.append("caption", document.getElementById("caption").value);
+		for(var i=0; i<form.elements.length; i++) {
+			formdata.append(form.elements[i].name, form.elements[i].value);
+		}
 		xhr.send(formdata);
 	});
     }, false);
