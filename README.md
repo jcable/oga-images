@@ -9,3 +9,5 @@ Caption and Description must be entered separately for each image.
 Images might need to be rotated before upload.
 
 The server side application is just a demo - it saves the image in the root directory and creates an html file with the metadata and a scaled image which links to the main image.
+
+The demo is available at https://oga-images.herokuapp.com/
