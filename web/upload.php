@@ -17,17 +17,18 @@
         unlink($_FILES["file"]["name"]);
     }
     
+    $n = split($name, '.')[0].".html";
+
     if(move_uploaded_file($_FILES["file"]["tmp_name"],$name)){
-      echo "View image <a href='" . $n."' target='_blank'>here</a>";
+      echo "View image <a href='$n' target='_blank'>here</a>";
     }else{
       echo "The file wasn't uploaded";
     }
 
-    $n = basename($name).".html";
     $f = fopen($n, "w");
     fwrite($f, "<html><head><title>".$_POST["caption"]."</title></head><body><ul>\n");
     foreach($_POST as $k => $v) {
-	    echo "<li>$k: $v</li>";
+	    fwrite($f, "<li>$k: $v</li>");
     }
     $a = getimagesize($name);
     $width = $a[0] / $a[1] * 480;
