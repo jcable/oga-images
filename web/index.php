@@ -13,7 +13,7 @@
         <link href="css/ex.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-<script src="js/demo.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
         </head>
 	<body>
 		<div id='wrapper'>
