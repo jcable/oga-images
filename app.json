@@ -1,0 +1,6 @@
+{
+  "name": "Image uploader",
+  "description": "A barebones PHP app to demonstrate client side image scaling and upload",
+  "repository": "",
+  "addons": []
+}
