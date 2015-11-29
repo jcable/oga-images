@@ -200,7 +200,8 @@ $(function() {
 		xhr.upload.addEventListener("progress", function(e) {
 			if (e.lengthComputable) {
 				var percentage = Math.round((e.loaded * 100) / e.total);
-				console.log("progress: "+percentage+"%");
+        			var bar = document.getElementById("progress");
+				bar.value = percentage;
 			}
 		}, false);
 

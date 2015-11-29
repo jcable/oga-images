@@ -42,6 +42,7 @@
 </ul>
               <input class='btn btn-success' type='button' value='Upload' id="upload"/>
 </form>
+<progress id="progress" value="0" max="100"/>
 			</div>
 			<div id='lower'>
               <input class='btn btn-primary' id="next" value='Next'/>
