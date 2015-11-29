@@ -7,12 +7,12 @@
 11) send all metadata
 -->
         <head>
-<meta charset='utf-8'>
+<meta charset='utf-8'/>
         <title>Image uploader</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        <link href="css/ex.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link href="css/ex.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+<script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>
         </head>
 	<body>
