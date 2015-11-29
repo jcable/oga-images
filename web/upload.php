@@ -17,7 +17,7 @@
         unlink($_FILES["file"]["name"]);
     }
     
-    $n = split($name, '.')[0].".html";
+    $n = explode('.', $name)[0].".html";
 
     if(move_uploaded_file($_FILES["file"]["tmp_name"],$name)){
       echo "View image <a href='$n' target='_blank'>here</a>";
