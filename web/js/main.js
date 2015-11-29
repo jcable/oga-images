@@ -48,7 +48,7 @@ $(function() {
 	}
     }
 
-    function compressImage(source_image, degrees, callback) {
+    function compressImage(source_image, callback) {
         
 	var lowQ = 0;
 	var highQ = 1;
@@ -58,7 +58,7 @@ $(function() {
         var cvs = document.getElementById('scaling_canvas');
         var ctx = cvs.getContext("2d");
 
-	if(degrees == 90 || degrees == 270) {
+	if(angleInDegrees == 90 || angleInDegrees == 270) {
 		cvs.width = source_image.naturalHeight;
 		cvs.height = source_image.naturalWidth;
 	}
@@ -66,7 +66,7 @@ $(function() {
 		cvs.width = source_image.naturalWidth;
 		cvs.height = source_image.naturalHeight;
 	}
-	drawRotatedToCanvas(source_image, cvs, degrees);
+	drawRotatedToCanvas(source_image, cvs, angleInDegrees);
 
 	var cb = function(b) {
 		if(b.size > maxSize) {
@@ -132,7 +132,7 @@ $(function() {
     };
 
     document.getElementById("rotateright").addEventListener("click", function (e) {
-	angleInDegrees= (angleInDegrees + 90) % 360;
+	angleInDegrees = (angleInDegrees + 90) % 360;
 	drawRotated(angleInDegrees);
     }, false);
 
@@ -140,7 +140,7 @@ $(function() {
 	if(angleInDegrees == 0)
 		angleInDegrees = 270;
 	else
-		angleInDegrees= (angleInDegrees - 90) % 360;
+		angleInDegrees = (angleInDegrees - 90) % 360;
 	drawRotated(angleInDegrees);
     }, false);
     
@@ -157,6 +157,7 @@ $(function() {
     document.getElementById('next').addEventListener('click', function(e) {
 
 	var file = fileList[nextFile++]; 
+	angleInDegrees = 0;
 	initMetaData();
 
 	if(nextFile>=fileList.length) {
@@ -192,7 +193,7 @@ $(function() {
 		console.log("no image");
 		return;
 	}
-	compressImage(img, angleInDegrees, function(blob, filename) {
+	compressImage(img, function(blob, filename) {
 		var xhr = new XMLHttpRequest();
 		xhr.onload = function(e) {
 			console.log(this.responseText);
