@@ -49,8 +49,11 @@ Uploading: <progress id="upload-progress" value="0" max="100"></progress>
               <input class='btn btn-primary' id="next" value='View next image'/>
           <legend>Diagnostics</legend>
           <div id='console_out'></div>
-			</div>
-		</div>
-	</body>
+      </div>
+    </div>
+    <footer>
+      Created by <a id="built" href="http://twitter.com/noggin7">@noggin7</a>
+    </footer>
+  </body>
 </html>
 
