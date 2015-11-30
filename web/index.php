@@ -41,8 +41,8 @@
 </ul>
               <input class='btn btn-success' type='button' value='Upload' id="upload"/>
 </form>
-<progress id="compression-progress" value="0" max="10">Compressing</progress><br/>
-<progress id="upload-progress" value="0" max="100">Uploading</progress>
+Compressing: <progress id="compression-progress" value="0" max="6"/>
+Uploading: <progress id="upload-progress" value="0" max="100"/>
 			</div>
 			<div id='lower'>
               <input class='btn btn-primary' id="next" value='Next'/>
