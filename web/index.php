@@ -19,7 +19,7 @@
 		<div id='wrapper'>
 			<div id='leftcol'>
 <form id='select'>
-          <label for="input">Select images:</label><input class='btn btn-primary' type="file" name='input' id="input" multiple />
+          <label for="input">Select one or more images using shift-click or a whole folder with ctrl-A:</label><input class='btn btn-primary' type="file" name='input' id="input" multiple />
 </form>
 	<div style='display:none' id='source'>
 	<img id="source_image" width='600' height='240'/>
@@ -34,11 +34,11 @@
 			<div id='rightcol'>
 <form id='data'>
 <ul>
-<li> <label for='caption'>Caption:</label><input required type='text' name='caption' id='caption'/></li>
+<li> <label for='caption'>Caption:</label><input required type='text' name='caption' id='caption' placeholder='You must enter a caption'/></li>
 <li> <label for='description'>Description:</label><input required type='textarea' name='description' id='description'/> </li>
-<li> <label for='copyright'>Copyright:</label><input required type='text' name='copyright' id='copyright'/> </li>
-<li> <label for='year'>Year:</label><input required type='text' name='year' id='year'/> </li>
-<li> <label for='area'>OGA Area:</label><input required type='text' name='area' id='area'/> </li>
+<li> <label for='copyright'>Copyright:</label><input required type='text' name='copyright' id='copyright' placeholder='The name of the copyright holder'/> </li>
+<li> <label for='year'>Year:</label><input required type='number' name='year' id='year' placeholder='When the event depicted occured'/> </li>
+<li> <label for='area'>OGA Area:</label><input required type='text' name='area' id='area' placeholder='e.g. East Coast'/> </li>
 </ul>
               <input class='btn btn-success' type='button' value='Upload' id="upload"/>
 </form>
