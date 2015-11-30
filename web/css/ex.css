@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
+#description {
+height: 4em;
+width: 20em;
+}
+
 #wrapper {
 width: 960px;
 background-color: #FFF;
