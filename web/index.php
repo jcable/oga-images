@@ -35,7 +35,7 @@
 <form id='data'>
 <ul>
 <li> <label for='caption'>Caption:</label><input required type='text' name='caption' id='caption' placeholder='You must enter a caption'/></li>
-<li> <label for='description'>Description:</label><input required type='textarea' name='description' id='description'/> </li>
+<li> <label for='description'>Description:</label><input required type='textarea' name='description' id='description' rows='3' cols='20' placeholder='A longer description include names of people and boats'/> </li>
 <li> <label for='copyright'>Copyright:</label><input required type='text' name='copyright' id='copyright' placeholder='The name of the copyright holder'/> </li>
 <li> <label for='year'>Year:</label><input required type='number' name='year' id='year' placeholder='When the event depicted occured'/> </li>
 <li> <label for='area'>OGA Area:</label><input required type='text' name='area' id='area' placeholder='e.g. East Coast'/> </li>
