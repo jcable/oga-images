@@ -200,16 +200,14 @@ $(function() {
 		return;
 	}
 	compressImage(img, function(blob, filename) {
+        	var bar = document.getElementById("upload-progress");
 		var xhr = new XMLHttpRequest();
 		xhr.onload = function(e) {
 			console.log(this.responseText);
 		}
-		xhr.upload.addEventListener("upload-progress", function(e) {
+		xhr.upload.addEventListener("progress", function(e) {
 			if (e.lengthComputable) {
-				var percentage = Math.round((e.loaded * 100) / e.total);
-        			//var bar = document.getElementById("progress");
-				//bar.value = percentage;
-				this.value = percentage;
+				bar.value = Math.round((e.loaded * 100) / e.total);
 			}
 		}, false);
 
