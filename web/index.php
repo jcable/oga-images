@@ -45,7 +45,7 @@ Compressing: <progress id="compression-progress" value="0" max="6"></progress><b
 Uploading: <progress id="upload-progress" value="0" max="100"></progress>
 			</div>
 			<div id='lower'>
-              <input class='btn btn-primary' id="next" value='Next'/>
+              <input class='btn btn-primary' id="next" value='View next image'/>
           <legend>Diagnostics</legend>
           <div id='console_out'></div>
 			</div>
