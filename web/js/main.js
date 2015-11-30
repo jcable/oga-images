@@ -160,6 +160,12 @@ $(function() {
 	}
     }, false);
 
+    document.getElementById("data").addEventListener("change", function (e) {
+	if(this.checkValidity()) {
+		document.getElementById("upload").removeAttribute('disabled');
+	}
+    }, false);
+
     document.getElementById('next').addEventListener('click', function(e) {
 
 	var file = fileList[nextFile++]; 
@@ -181,6 +187,8 @@ $(function() {
         console.log("loaded " + file.name+" size " + s.toPrecision(2)+' MB');
         
         reader.readAsDataURL(file);
+
+        document.getElementById("upload").disabled=true;
 
     }, false);
 

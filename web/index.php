@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- TODO
-3) show list of files and update to show which ones done
-4) enable/disable upload button according to required fields
-10) show busy mouse when compressing and uploading image 
--->
   <head>
     <meta charset='utf-8'/>
     <title>Image uploader</title>
