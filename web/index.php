@@ -5,19 +5,20 @@
 4) enable/disable upload button according to required fields
 10) show busy mouse when compressing and uploading image 
 -->
-        <head>
-<meta charset='utf-8'/>
-        <title>Image uploader</title>
-        <link href="css/ex.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="css/bootstrap.min.css"/>
-<link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/main.js" type="text/javascript"></script>
-        </head>
-	<body>
-		<div id='wrapper'>
-			<div id='leftcol'>
-<form id='select'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Image uploader</title>
+    <link href="css/ex.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <a href="https://github.com/jcable/oga-images"><img id='github_widget' src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+    <div id='wrapper'>
+      <div id='leftcol'>
+        <form id='select'>
           <label for="input">Select one or more images using shift-click or a whole folder with ctrl-A:</label><input class='btn btn-primary' type="file" name='input' id="input" multiple />
 </form>
 	<div style='display:none' id='source'>

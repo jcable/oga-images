@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
 
+#github_widget {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 0px;
+}
+
 #description {
 height: 4em;
 width: 20em;
