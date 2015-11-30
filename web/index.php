@@ -4,7 +4,6 @@
 3) show list of files and update to show which ones done
 4) enable/disable upload button according to required fields
 10) show busy mouse when compressing and uploading image 
-11) send all metadata
 -->
         <head>
 <meta charset='utf-8'/>
@@ -42,7 +41,8 @@
 </ul>
               <input class='btn btn-success' type='button' value='Upload' id="upload"/>
 </form>
-<progress id="progress" value="0" max="100"/>
+<progress id="compression-progress" value="0" max="10">Compressing</progress><br/>
+<progress id="upload-progress" value="0" max="100">Uploading</progress>
 			</div>
 			<div id='lower'>
               <input class='btn btn-primary' id="next" value='Next'/>

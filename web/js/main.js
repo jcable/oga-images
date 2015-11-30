@@ -54,6 +54,9 @@ $(function() {
 	var highQ = 1;
 	var quality = 0.90;
 
+        var bar = document.getElementById("compression-progress");
+	bar.value = 0;
+
         var time_start = new Date().getTime();
         var cvs = document.getElementById('scaling_canvas');
         var ctx = cvs.getContext("2d");
@@ -69,6 +72,9 @@ $(function() {
 	drawRotatedToCanvas(source_image, cvs, angleInDegrees);
 
 	var cb = function(b) {
+
+		bar.value = bar.value+1;
+
 		if(b.size > maxSize) {
 			highQ = quality;
 			quality = lowQ + (highQ - lowQ) / 2.0;
@@ -198,11 +204,12 @@ $(function() {
 		xhr.onload = function(e) {
 			console.log(this.responseText);
 		}
-		xhr.upload.addEventListener("progress", function(e) {
+		xhr.upload.addEventListener("upload-progress", function(e) {
 			if (e.lengthComputable) {
 				var percentage = Math.round((e.loaded * 100) / e.total);
-        			var bar = document.getElementById("progress");
-				bar.value = percentage;
+        			//var bar = document.getElementById("progress");
+				//bar.value = percentage;
+				this.value = percentage;
 			}
 		}, false);
 
