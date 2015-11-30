@@ -14,5 +14,4 @@ The demo is available at https://oga-images.herokuapp.com/
 
 TODO
 1) show list of files and update to show which ones done
-2) enable/disable upload button according to required fields
-3) ?
+2) ?

@@ -97,6 +97,7 @@ $(function() {
 		var s = b.size/1024/1024;
 		var duration = new Date().getTime() - time_start;
 		console.log('Compressed to '+s.toPrecision(2)+' MB in: ' + duration + 'ms');
+		bar.value = bar.max;
 	}
 
 	cvs.toBlob(cb, "image/jpeg", quality);

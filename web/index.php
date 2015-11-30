@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/canvas-to-blob.min.js" type="text/javascript"></script>
   </head>
   <body>
     <a href="https://github.com/jcable/oga-images"><img id='github_widget' src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
